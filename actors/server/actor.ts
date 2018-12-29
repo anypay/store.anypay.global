@@ -7,9 +7,6 @@ import { join } from 'path';
 
 const Hapi=require('hapi');
 
-
-
-
 // Start the server
 async function start () {
 
@@ -18,6 +15,7 @@ async function start () {
       host:'0.0.0.0',
       port:8000,
       routes: {
+        cors: true,
         files: {
           relativeTo: join(__dirname, '../../store-app/dist/')
         }

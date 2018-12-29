@@ -7,7 +7,8 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
-  this.route('ticket-purchase');
+  this.route('home', { path: '/' });
+  this.route('ticket-purchase', { path: 'ticket-purchase/:uid' });
   this.route('ticket');
 });
 
