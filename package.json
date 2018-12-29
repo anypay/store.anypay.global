@@ -8,7 +8,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node actors/server/actor.ts"
+    "start": "ts-node actors/server/actor.ts",
+    "build-app": "cd store-app && ember build --environment=production",
+    "build-docker": "docker build -t store.anypay.global ."
   },
   "keywords": [],
   "author": "",
@@ -21,6 +23,7 @@
     "commander": "^2.19.0",
     "dotenv": "^6.2.0",
     "hapi": "^17.8.1",
+    "inert": "^5.1.2",
     "mocha": "^5.2.0",
     "pg": "^7.7.1",
     "sequelize": "^4.42.0",
