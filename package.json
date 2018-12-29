@@ -1,0 +1,32 @@
+{
+  "name": "store.anypay.global",
+  "version": "1.0.0",
+  "description": "Example Store to test e-Commerce Integrations",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ts-node actors/server/actor.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^10.12.18",
+    "@types/winston": "^2.4.4",
+    "amqplib": "^0.5.3",
+    "bitcore-lib-cash": "^0.19.0",
+    "commander": "^2.19.0",
+    "dotenv": "^6.2.0",
+    "hapi": "^17.8.1",
+    "mocha": "^5.2.0",
+    "pg": "^7.7.1",
+    "sequelize": "^4.42.0",
+    "superagent": "^4.1.0",
+    "ts-node": "^7.0.1",
+    "typescript": "^3.2.2",
+    "winston": "^3.1.0"
+  }
+}
